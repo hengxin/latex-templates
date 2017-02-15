@@ -1,0 +1,72 @@
+% hw.tex: LaTeX template for homework
+% Feel free to modify it (mainly the 'preamble' file).
+
+\documentclass[11pt, a4paper, UTF8]{ctexart}
+\input{preamble}
+
+%%%%%%%%%%%%%%%%%%%%
+\title{第一讲：线性规划}
+\me{姓名}{学号}
+\date{\today}
+%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+%%%%%%%%%%%%%%%%%%%%
+\beginthishw	%	begin this homework (hw) 
+
+%%%%%%%%%%
+\begin{problem}[29.1-4]	% note: use '[]' for optional information
+  Convert the following linear program into standard form:
+
+  \begin{equation*}
+	\setlength\arraycolsep{2.5pt}
+	\begin{array}{l@{\quad} r c r c r c r}
+	  \max          &	2x_1 &+&	7x_2 &+&	x_3 & &	\\
+	  \textup{subject to} & & & & & & & \\
+	  				&	x_1	& &		&  - & x_3 & = & 7 \\
+					&   3x_1 & + & x_2 &  &  & \geq & 24 \\
+					&     &  & x_2 & & & \geq & 0  \\ 
+					&     &  & & & x_3 & \leq & 0
+	\end{array}
+  \end{equation*}
+\end{problem}
+
+\begin{solution}
+  Standard form 如下：
+\end{solution}
+%%%%%%%%%%
+\begin{problem}[29.1-5]
+  Convert the following linear program into slack form:
+
+  \noindent What are the basic and nonbasic variables?
+\end{problem}
+
+\begin{solution}
+  Slack form 如下：
+\end{solution}
+%%%%%%%%%%
+\begin{problem}[xx.x-x]
+  假设这是一道需要证明的题目。	
+\end{problem}
+
+\begin{proof}
+  证明略。	
+\end{proof}
+%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+\beginlasthw	% begin the last homework (correction)
+
+\begin{problem}[28.1-2]
+  题目。
+\end{problem}
+
+\begin{cause}
+  简述错误原因（可选）。
+\end{cause}
+
+% or use the ``revision'' environment
+\begin{solution}
+  正确解答。
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%
+\end{document}

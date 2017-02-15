@@ -1,0 +1,46 @@
+% file: preamble.tex
+
+% import packages
+% configure for Chinese
+% define theorem-like environments
+
+% set fonts commands
+\newcommand{\song}{\CJKfamily{song}} 
+\newcommand{\hei}{\CJKfamily{hei}} 
+\newcommand{\kai}{\CJKfamily{kai}} 
+\newcommand{\fs}{\CJKfamily{fs}}
+
+\newcommand{\me}[2]{\author{{\bfseries 姓名：}\underline{#1}\hspace{2em}{\bfseries 学号：}\underline{#2}}}
+\newcommand{\beginthishw}{\part{作业}}
+\newcommand{\beginlasthw}{\newpage\part{订正}}
+
+\usepackage{graphicx}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[amsmath, thmmarks]{ntheorem}
+
+\theoremstyle{break}
+\theorembodyfont{\song}
+\theoremseparator{}
+\newtheorem*{problem}{题目}
+
+\theorempreskip{2.0\topsep}
+\theoremheaderfont{\kai\bfseries}
+\theoremseparator{：}
+\theorempostwork{\bigskip\hrule}
+\newtheorem*{solution}{解答}
+\theorempostwork{\bigskip\hrule}
+\newtheorem*{revision}{订正}
+
+\theoremstyle{plain}
+\newtheorem*{cause}{错因分析}
+
+\theoremstyle{break}
+\theorempostwork{\bigskip\hrule}
+\theoremsymbol{\ensuremath{\Box}}
+\newtheorem*{proof}{证明}
+
+\renewcommand\figurename{图}
+\renewcommand\tablename{表}
