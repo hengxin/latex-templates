@@ -12,7 +12,8 @@
 
 \newcommand{\me}[2]{\author{{\bfseries 姓名：}\underline{#1}\hspace{2em}{\bfseries 学号：}\underline{#2}}}
 \newcommand{\beginthishw}{\part{作业}}
-\newcommand{\beginlasthw}{\newpage\part{订正}}
+\newcommand{\beginlasthw}{\part{订正}}
+\newcommand{\beginfb}{\part{fankui}}
 
 \usepackage{graphicx}
 
@@ -29,6 +30,7 @@
 \theorempreskip{2.0\topsep}
 \theoremheaderfont{\kai\bfseries}
 \theoremseparator{：}
+\newtheorem*{remark}{zhu}
 \theorempostwork{\bigskip\hrule}
 \newtheorem*{solution}{解答}
 \theorempostwork{\bigskip\hrule}
@@ -44,3 +46,25 @@
 
 \renewcommand\figurename{图}
 \renewcommand\tablename{表}
+
+% commands for math
+\newcommand{\set}[1]{\{#1\}}
+
+% commands for figures
+
+% for fig with caption: #1: width/size; #2: fig file; #3: fig caption
+\newcommand{\fig}[3]{
+  \begin{figure}[htp]
+    \centering
+      \includegraphics[#1]{#2}
+      \caption{#3}
+  \end{figure}
+}
+
+% for fig without caption: #1: width/size; #2: fig file
+\newcommand{\fignocaption}[2]{
+  \begin{figure}[htp]
+    \centering
+    \includegraphics[#1]{#2}
+  \end{figure}
+}
