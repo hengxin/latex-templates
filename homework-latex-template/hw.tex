@@ -1,40 +1,59 @@
-% hw.tex: LaTeX template for homework
-% Feel free to modify it (mainly the 'preamble' file).
+%%%%% hw.tex: LaTeX template for homework %%%%%
+%%%%% Feel free to modify it (mainly the 'preamble' file). %%%%%
+%%%%% Contact hfwei@nju.edu.cn (Hengfeng Wei) for suggestions. %%%%%
 
 \documentclass[11pt, a4paper, UTF8]{ctexart}
-\input{preamble}
+\input{preamble}  % modify this file if necessary
 
 %%%%%%%%%%%%%%%%%%%%
-\title{第一讲：线性规划}
+\title{第一讲：为什么计算机能解题？}
 \me{姓名}{学号}
 \date{\today}
 %%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \maketitle
 %%%%%%%%%%%%%%%%%%%%
-\beginthishw	%	begin this homework (hw) 
+\noplagiarism
+%%%%%%%%%%%%%%%%%%%%
+\beginthishw	% begin ``this homework (hw)'' part
 
 %%%%%%%%%%
-\begin{problem}[29.1-4]	% note: use '[]' for optional information
-  A problem here.
+\begin{problem}[UD: 1.2]	% Note: use '[]' (instead of '()' or '{}') to provide additional information
+  Find a word ($\ldots$) $\ldots$ （抄写或简述题目）
 \end{problem}
 
-% Important Note: Now, this ``remark'' environment should be used before
-% the ``solution''/``revision''/``proof'' environment.
-\begin{remark}	
-  Refer to book.
+% The ``remark'' environments (when needed) must be 
+% put before the ``solution''/``revision''/``proof'' environments.
+\begin{remark}	% Optional
+  以下解答参考了书籍/网站/讲义 $\ldots$。
+
+  \noindent 以下解答是与 XXX 同学讨论得到的。
 \end{remark}
 
 \begin{solution}
-  Standard form 如下：
+  插入图片：
+  \begin{verbatim}
+    \fig{width = 0.30\textwidth}{figs/hello.png}{caption}
+    \fignocaption{width = 0.30\textwidth}{figs/hello.png}
+  \end{verbatim}
 \end{solution}
 %%%%%%%%%%
-\begin{problem}[xx.x-x]
+
+%%%%%%%%%%
+\begin{problem}[UD: 1.3]
+  A problem here.
+\end{problem}
+
+\begin{solution}
+  Solution here.
+\end{solution}
+%%%%%%%%%%
+\newpage  % page-break; comment it out if not necessarily
+%%%%%%%%%%
+\begin{problem}[UD: x.x]
   假设这是一道需要证明的题目。	
 \end{problem}
 
-% Important Note: Now, this ``remark'' environment should be used before
-% the ``solution''/``revision''/``proof'' environment.
 % \begin{remark}	
 %   Refer to book.
 % \end{remark}
@@ -44,9 +63,10 @@
 \end{proof}
 %%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%
-\beginlasthw	% begin the last homework (correction)
+\begincorrection	% begin the ``correction'' part (Optional)
 
-\begin{problem}[28.1-2]
+%%%%%%%%%%
+\begin{problem}[题号]
   题目。
 \end{problem}
 
@@ -54,11 +74,21 @@
   简述错误原因（可选）。
 \end{cause}
 
-% or use the ``solution'' environment
+% Or use the ``solution'' environment
 \begin{revision}
   正确解答。
 \end{revision}
+%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%
-\beginfb	% begin the feedback section
+\beginfb	% begin the feedback section (Optional)
+
+你可以写：
+\begin{itemize}
+  \item 对课程的建议与意见
+  \item 给教师或助教的建议与意见
+  \item 教材中不理解的内容
+  \item 希望深入了解的内容
+  \item 等
+\end{itemize}
 %%%%%%%%%%%%%%%%%%%%
 \end{document}
