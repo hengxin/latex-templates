@@ -1,5 +1,7 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % File: preamble.tex
-% left = 3cm, right = 2cm,
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage[top = 1.5cm]{geometry}
 
 % Set fonts commands
@@ -13,18 +15,20 @@
 % Always keep this.
 \newcommand{\noplagiarism}{
   \begin{center}
-    请独立完成作业，不得抄袭。\\
-    若参考了其它资料，请给出引用。\\
-    鼓励讨论，但需独立书写解题过程。
+    \fbox{\begin{tabular}{@{}c@{}}
+      请独立完成作业，不得抄袭。\\
+      若参考了其它资料，请给出引用。\\
+      鼓励讨论，但需独立书写解题过程。
+    \end{tabular}}
   \end{center}
 }
 
-% Each hw may consist of three parts:
+% Each hw consists of three parts:
 % (1) this homework
 \newcommand{\beginthishw}{\part{作业}}
-% (2) corrections
+% (2) corrections (Optional)
 \newcommand{\begincorrection}{\part{订正}}
-% (3) any feedback
+% (3) any feedback (Optional)
 \newcommand{\beginfb}{\part{反馈}}
 
 % For math
@@ -43,7 +47,7 @@
 \theorempreskip{2.0\topsep}
 \theoremheaderfont{\kai\bfseries}
 \theoremseparator{：}
-\newtheorem*{remark}{注}
+% \newtheorem*{remark}{注}
 \theorempostwork{\bigskip\hrule}
 \newtheorem*{solution}{解答}
 \theorempostwork{\bigskip\hrule}
@@ -51,6 +55,7 @@
 
 \theoremstyle{plain}
 \newtheorem*{cause}{错因分析}
+\newtheorem*{remark}{注}
 
 \theoremstyle{break}
 \theorempostwork{\bigskip\hrule}

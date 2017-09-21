@@ -1,6 +1,18 @@
-%%%%% hw.tex: LaTeX template for homework %%%%%
-%%%%% Feel free to modify it (mainly the 'preamble' file). %%%%%
-%%%%% Contact hfwei@nju.edu.cn (Hengfeng Wei) for suggestions. %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% File: hw.tex 						   %
+% Description: LaTeX template for homework.                %
+%
+% Feel free to modify it (mainly the 'preamble' file).     %
+% Contact hfwei@nju.edu.cn (Hengfeng Wei) for suggestions. %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% IMPORTANT NOTE: Compile this file using 'XeLaTeX' (not 'PDFLaTeX') %
+%
+% If you are using TeXLive 2016 on windows,                          %
+% you may need to check the following post:                          %
+% https://tex.stackexchange.com/q/325278/23098                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[11pt, a4paper, UTF8]{ctexart}
 \input{preamble}  % modify this file if necessary
@@ -8,17 +20,17 @@
 %%%%%%%%%%%%%%%%%%%%
 \title{第一讲：为什么计算机能解题？}
 \me{姓名}{学号}
-\date{\today}
+\date{\today}     % you can specify a date like ``2017年9月30日''.
 %%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \maketitle
 %%%%%%%%%%%%%%%%%%%%
-\noplagiarism
+\noplagiarism	% always keep this
 %%%%%%%%%%%%%%%%%%%%
 \beginthishw	% begin ``this homework (hw)'' part
 
 %%%%%%%%%%
-\begin{problem}[UD: 1.2]	% Note: use '[]' (instead of '()' or '{}') to provide additional information
+\begin{problem}[UD: 1.2]	% NOTE: use '[]' (instead of '()' or '{}') to provide additional information
   Find a word ($\ldots$) $\ldots$ （抄写或简述题目）
 \end{problem}
 
@@ -31,11 +43,25 @@
 \end{remark}
 
 \begin{solution}
-  插入图片：
+  可使用如下命令插入图片：
   \begin{verbatim}
     \fig{width = 0.30\textwidth}{figs/hello.png}{caption}
     \fignocaption{width = 0.30\textwidth}{figs/hello.png}
   \end{verbatim}
+  插入数学公式：
+  \begin{verbatim}
+    $E = mc^2$
+  \end{verbatim}
+  得到 $E = mc^2$。
+  \begin{verbatim}
+    \[
+      E = mc^2
+    \]
+  \end{verbatim}
+  得到
+  \[
+    E = mc^2
+  \]
 \end{solution}
 %%%%%%%%%%
 
@@ -48,7 +74,7 @@
   Solution here.
 \end{solution}
 %%%%%%%%%%
-\newpage  % page-break; comment it out if not necessarily
+% \newpage  % continue in a new page
 %%%%%%%%%%
 \begin{problem}[UD: x.x]
   假设这是一道需要证明的题目。	
