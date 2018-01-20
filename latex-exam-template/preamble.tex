@@ -1,0 +1,39 @@
+% file: preamble.tex
+
+% import packages
+% configure for Chinese
+% define theorem-like environments
+
+% set fonts commands
+\newcommand{\song}{\CJKfamily{song}} 
+\newcommand{\hei}{\CJKfamily{hei}} 
+\newcommand{\kai}{\CJKfamily{kai}} 
+\newcommand{\fs}{\CJKfamily{fs}}
+
+\usepackage[a4paper, margin = 0.80in]{geometry}
+
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{positioning, calc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[amsmath, thmmarks]{ntheorem}
+
+\usepackage[]{enumerate}
+
+\theoremstyle{break}
+\theorembodyfont{\song}
+\theoremseparator{}
+\newtheorem{problem}{题目}
+
+\theorempreskip{2.0\topsep}
+\theoremheaderfont{\kai\bfseries}
+\theoremseparator{：}
+
+\renewcommand\figurename{图}
+\renewcommand\tablename{表}
+
+\newcommand{\edate}[3]{考试日期：\underline{#1}年\underline{\,#2}月\underline{\,#3}日}
