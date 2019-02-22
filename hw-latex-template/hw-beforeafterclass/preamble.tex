@@ -1,0 +1,82 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% File: preamble.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[top = 1.5cm]{geometry}
+
+% Set fonts commands
+\newcommand{\song}{\CJKfamily{song}} 
+\newcommand{\hei}{\CJKfamily{hei}} 
+\newcommand{\kai}{\CJKfamily{kai}} 
+\newcommand{\fs}{\CJKfamily{fs}}
+
+\newcommand{\me}[2]{\author{{\bfseries 姓名：}\underline{#1}\hspace{2em}{\bfseries 学号：}\underline{#2}}}
+
+% Always keep this.
+\newcommand{\noplagiarism}{
+  \begin{center}
+    \fbox{\begin{tabular}{@{}c@{}}
+      请独立完成作业，不得抄袭。\\
+      若得到他人帮助, 请致谢。\\
+      若参考了其它资料，请给出引用。\\
+      鼓励讨论，但需独立书写解题过程。
+    \end{tabular}}
+  \end{center}
+}
+
+% Each hw consists of three parts:
+% (1) this homework
+\newcommand{\beforeclasshw}{\part{课前作业}}
+\newcommand{\afterclasshw}{\part{课后作业}}
+\newcommand{\optional}{{\it 选做}} 
+
+% For math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% Define theorem-like environments
+\usepackage[amsmath, thmmarks]{ntheorem}
+
+\theoremstyle{break}
+\theorembodyfont{\song}
+\theoremseparator{}
+\newtheorem*{problem}{题目}
+
+\theorempreskip{2.0\topsep}
+\theoremheaderfont{\kai\bfseries}
+\theoremseparator{：}
+% \newtheorem*{remark}{注}
+\theorempostwork{\bigskip\hrule}
+\newtheorem*{solution}{解答}
+\theorempostwork{\bigskip\hrule}
+\newtheorem*{revision}{订正}
+
+\theoremstyle{plain}
+\newtheorem*{remark}{注}
+
+\theoremstyle{break}
+\theorempostwork{\bigskip\hrule}
+\theoremsymbol{\ensuremath{\Box}}
+\newtheorem*{proof}{证明}
+
+\renewcommand\figurename{图}
+\renewcommand\tablename{表}
+
+% For figures
+% for fig with caption: #1: width/size; #2: fig file; #3: fig caption
+\newcommand{\fig}[3]{
+  \begin{figure}[htp]
+    \centering
+      \includegraphics[#1]{#2}
+      \caption{#3}
+  \end{figure}
+}
+
+% for fig without caption: #1: width/size; #2: fig file
+\newcommand{\fignocaption}[2]{
+  \begin{figure}[htp]
+    \centering
+    \includegraphics[#1]{#2}
+  \end{figure}
+}
